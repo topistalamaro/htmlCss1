@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    ul {
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* Style the list items */
+      ul li {
+        cursor: pointer;
+        position: relative;
+        padding: 12px 8px 12px 40px;
+        background: rgb(240, 218, 218);
+        font-size: 18px;
+        transition: 0.2s;
+      
+        /* make the list items unselectable */
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      
+      /* Set all odd list items to a different color (zebra-stripes) */
+      ul li:nth-child(odd) {
+        background: rgb(240, 218, 218);
+      }
+      
+      /* Darker background-color on hover */
+      ul li:hover {
+        background: #ddd;
+      }
+      
+      /* Style the header */
+      .header {
+        background-color: #d8f436;
+        padding: 30px 40px;
+        color: white;
+        text-align: center;
+      }
+      
+      /* Clear floats after the header */
+      .header:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+</head>
+<body>
+    <div id="myDIV1" class="header">
+        <h2>Doing List</h2>
+      </div>
+    <ul id="myUL1">
+        <li>Go for shopping</li>
+        <li>Feed the dogs</li>
+        <li>Email Fred</li>
+        <li>Pick books from the library</li>
+      </ul>
+</body>
+</html>
